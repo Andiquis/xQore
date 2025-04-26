@@ -1,0 +1,11 @@
+Total_Ventas = SUMX(Ventas, Ventas[Cantidad] * Ventas[Precio_Unitario])
+
+Promedio_Ventas_Transaccion = AVERAGEX(Ventas, Ventas[Cantidad] * Ventas[Precio_Unitario])
+
+Margen_Ganancia = SUMX(Ventas, Ventas[Cantidad] * Ventas[Precio_Unitario] * 0.4)
+
+Cantidad_Productos_Vendidos = SUM(Ventas[Cantidad])
+
+Descuento_Promedio = AVERAGE(Promociones[Descuento (%)])
+
+Contribucion_Ventas = DIVIDE([Total_Ventas], CALCULATE([Total_Ventas], ALL(Productos)))

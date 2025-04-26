@@ -1,0 +1,69 @@
+/* estilos_licencia.css - Estilos para el popup de activación de licencia */
+
+.licencia-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.licencia-popup-contenido {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90%;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.licencia-popup-contenido h2 {
+    margin-top: 0;
+    color: #0f0;
+    font-family: 'Courier New', monospace;
+}
+
+.licencia-popup-contenido form {
+    display: flex;
+    flex-direction: column;
+}
+
+.licencia-popup-contenido input[type="text"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #0f0;
+    background: #000;
+    color: #0f0;
+    font-family: 'Courier New', monospace;
+}
+
+.licencia-popup-contenido button {
+    padding: 10px;
+    background: #0f0;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+}
+
+.licencia-popup-contenido button:hover {
+    background: #0c0;
+}
+
+.licencia-popup-error {
+    color: #f00;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.licencia-popup-exito {
+    color: #0f0;
+    margin-bottom: 10px;
+    display: none;
+}

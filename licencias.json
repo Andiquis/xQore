@@ -1,0 +1,28 @@
+{
+    "licencias": [
+      {
+        "licencia_plan": "Free",
+        "licencia_duracion_dias": 7,
+        "licencia_clave": null,
+        "licencia_popup_activacion": true
+      },
+      {
+        "licencia_plan": "Monthly",
+        "licencia_duracion_dias": 30,
+        "licencia_clave": "xqore30m",
+        "licencia_popup_activacion": true
+      },
+      {
+        "licencia_plan": "Yearly",
+        "licencia_duracion_dias": 365,
+        "licencia_clave": "xqore365y",
+        "licencia_popup_activacion": true
+      },
+      {
+        "licencia_plan": "Unlimited",
+        "licencia_duracion_dias": null,
+        "licencia_clave": "xqore00u",
+        "licencia_popup_activacion": false
+      }
+    ]
+  }
