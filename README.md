@@ -87,5 +87,6 @@ Puedes descargar el instalador de **XQ0R3 Setup 2.0.7.exe** desde Google Drive:
 ---
 
 
+
 > *"El camino hacia el conocimiento comienza con tu esfuerzo diario."*  
 > — Sistema XQ0R3
