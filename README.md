@@ -1,6 +1,6 @@
 # 🧠 XQ0R3 - Sistema Integral de Aprendizaje y Productividad
 
-![XQ0R3 Banner](https://via.placeholder.com/900x200?text=XQ0R3+-+Sistema+Integral) <!-- Puedes reemplazar este enlace con una imagen real -->
+![XQ0R3 Banner](https://camo.githubusercontent.com/33c943e22243ea22b58ddd612368435f4b48d762351d859f54ba70de4a796303/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f4c6d4e77724268656a6b4b394546503530342f67697068792e676966) <!-- Puedes reemplazar este enlace con una imagen real -->
 
 ## 🚀 ¿Qué es XQ0R3?
 
