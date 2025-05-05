@@ -61,6 +61,37 @@
 - Servidor local con PHP 7.x o superior
 - SQLite habilitado
 - Navegador moderno (Chrome, Firefox, etc.)
+- Para Android: Termux instalado
+
+---
+
+## 📱 Tutorial de Implementación en Termux
+
+### Paso 1: Instalar Termux
+Primero debes instalar Termux desde el enlace proporcionado al final del README.
+
+### Paso 2: Instalar dependencias básicas
+```bash
+pkg update && pkg upgrade -y
+pkg install wget php sqlite git -y
+```
+
+### Paso 3: Descargar e instalar XQ0R3
+```bash
+mkdir -p ~/xQore
+cd ~/xQore
+wget -O setup.sh https://raw.githubusercontent.com/andisystems/xqore/master/setup.sh
+chmod +x setup.sh
+./setup.sh
+```
+
+### Paso 4: Iniciar el sistema
+```bash
+cd ~/xQore
+bash start.sh
+```
+
+El sistema se iniciará automáticamente y abrirá la interfaz web en tu navegador predeterminado.
 
 ---
 
@@ -78,15 +109,41 @@ Puedes usarlo, modificarlo y compartirlo libremente con atribución.
 
 ---
 
-## 📥 Descargar el Instalador de XQ0R3
+## 📥 Descargas
 
-Puedes descargar el instalador de **XQ0R3 Setup 2.0.7.exe** desde Google Drive:
+<div align="center">
+    <a href="https://drive.google.com/file/d/1Yu4762xoKL7Qpgeaf6wAP8608I9zavKS/view?usp=sharing" 
+       style="display: inline-block; 
+              padding: 15px 30px; 
+              background: linear-gradient(135deg, #00c6ff, #0072ff); 
+              color: white; 
+              text-decoration: none; 
+              border-radius: 50px; 
+              font-weight: bold; 
+              box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4); 
+              transition: all 0.3s ease;">
+        <b>⬇️ Descargar XQ0R3 Setup 2.0.7.exe</b>
+    </a>
+</div>
 
-[⬇️ Descargar XQ0R3 Setup 2.0.7.exe](https://drive.google.com/file/d/1Yu4762xoKL7Qpgeaf6wAP8608I9zavKS/view?usp=sharing)
+<br>
+
+<div align="center">
+    <a href="https://github.com/termux/termux-app/releases/download/v0.118.0/termux-app_v0.118.0+github-debug_universal.apk" 
+       style="display: inline-block; 
+              padding: 15px 30px; 
+              background: linear-gradient(135deg, #FF4500, #8B0000); 
+              color: white; 
+              text-decoration: none; 
+              border-radius: 50px; 
+              font-weight: bold; 
+              box-shadow: 0 4px 15px rgba(139, 0, 0, 0.4); 
+              transition: all 0.3s ease;">
+        <b>📱 Descargar Termux para Android</b>
+    </a>
+</div>
 
 ---
-
-
 
 > *"El camino hacia el conocimiento comienza con tu esfuerzo diario."*  
 > — Sistema XQ0R3
