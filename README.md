@@ -78,20 +78,22 @@ pkg install wget php sqlite git -y
 
 ### Paso 3: Descargar e instalar XQ0R3
 ```bash
-mkdir -p ~/xQore
+git clone https://github.com/Andiquis/xQore ~/xQore
 cd ~/xQore
-wget -O setup.sh https://raw.githubusercontent.com/andisystems/xqore/master/setup.sh
-chmod +x setup.sh
-./setup.sh
+chmod +x start.sh
+./start.sh
 ```
 
-### Paso 4: Iniciar el sistema
-```bash
-cd ~/xQore
-bash start.sh
-```
+### Paso 4: Reiniciar Termux y usar el menú interactivo
 
-El sistema se iniciará automáticamente y abrirá la interfaz web en tu navegador predeterminado.
+Una vez instalado, reinicia Termux para que los cambios surtan efecto. Al iniciar nuevamente, verás el menú interactivo donde podrás:
+
+1. Iniciar servidor
+2. Detener servidor 
+3. Abrir en navegador
+4. Salir
+
+El sistema se abrirá automáticamente en tu navegador predeterminado.
 
 ---
 
