@@ -1,7 +1,7 @@
 <?php
 // index.php - Página principal
 require_once 'config.php'; // Incluir la configuración de la base de datos
-require_once 'sistema_licencias.php'; // Incluir el sistema de licencias
+//require_once 'sistema_licencias.php'; // Incluir el sistema de licencias
 
 // Obtener frase motivacional aleatoria
 function getMensajeMotivacional() {
