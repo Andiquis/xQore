@@ -114,7 +114,7 @@ Puedes usarlo, modificarlo y compartirlo libremente con atribución.
 ## 📥 Descargas
 
 <div align="center">
-    <a href="https://drive.google.com/file/d/1Yu4762xoKL7Qpgeaf6wAP8608I9zavKS/view?usp=sharing" 
+    <a href="https://drive.google.com/file/d/1XhkTeBXCT29VYuJE03H8FwZ_o3J18zhR/view?usp=sharing" 
        style="display: inline-block; 
               padding: 15px 30px; 
               background: linear-gradient(135deg, #00c6ff, #0072ff); 
@@ -127,6 +127,22 @@ Puedes usarlo, modificarlo y compartirlo libremente con atribución.
         <b>⬇️ Descargar XQ0R3 Setup 2.0.7.exe</b>
     </a>
 </div>
+<br>
+<div align="center">
+    <a href="https://drive.google.com/uc?export=download&id=1XhkTeBXCT29VYuJE03H8FwZ_o3J18zhR" 
+       style="display: inline-block; 
+              padding: 15px 30px; 
+              background: linear-gradient(135deg, #00c6ff, #0072ff); 
+              color: white; 
+              text-decoration: none; 
+              border-radius: 50px; 
+              font-weight: bold; 
+              box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4); 
+              transition: all 0.3s ease;">
+        <b>⬇️ Descargar XQ0R3 Setup 2.0.7.exe</b>
+    </a>
+</div>
+
 
 <br>
 
