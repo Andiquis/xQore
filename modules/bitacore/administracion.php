@@ -449,7 +449,7 @@ $db = null;
                     </select>
                 </div>
 
-                <button class="add-button" onclick="openModal('crear')"><i class="fas fa-plus"></i> Nueva Registro</button>
+                <button class="add-button" onclick="openModal('crear')"><i class="fas fa-plus"></i> Nuevo Registro</button>
 
                 <div class="table-container">
                     <?php if (empty($bitacoras)): ?>

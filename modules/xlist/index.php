@@ -25,7 +25,7 @@ try {
 $accionesUltimaLista = [];
 if ($ultimaLista) {
     try {
-        $stmtAcciones = $db->prepare("SELECT id_acciones, nombre_accion, estado_accion FROM tacciones WHERE Id_lista = :id ORDER BY nombre_accion DESC");
+        $stmtAcciones = $db->prepare("SELECT id_acciones, nombre_accion, estado_accion FROM tacciones WHERE Id_lista = :id ORDER BY id_acciones DESC");
         $stmtAcciones->bindParam(':id', $ultimaLista['Id_lista'], PDO::PARAM_INT);
         $stmtAcciones->execute();
         $accionesUltimaLista = $stmtAcciones->fetchAll(PDO::FETCH_ASSOC);

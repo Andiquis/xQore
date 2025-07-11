@@ -1,11 +1,16 @@
 <?php
 // sistema_licencias.php - Sistema completo de gestión de licencias
 
-// Inicializar la base de datos SQLite
+// Inicializar la base de datos SQLite para licencias
+
 try {
-    $licencia_db_path = __DIR__ . '/database/xqore_licencias.db';
+    // Obtener la ruta persistente desde la variable de entorno, o usar ruta local por defecto
+    $licencia_db_path = getenv("XQORE_LIC_DB_PATH") ?: __DIR__ . '/database/xqore_licencias.db';
+
+    // Conectar a la base de datos de licencias
     $licencia_db = new PDO('sqlite:' . $licencia_db_path);
     $licencia_db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $licencia_db->exec("PRAGMA busy_timeout = 5000"); // evitar bloqueos largos
 
     // Crear tabla de licencias si no existe
     $licencia_db->exec("
@@ -22,7 +27,7 @@ try {
     $licencia_count = $licencia_stmt->fetchColumn();
     if ($licencia_count == 0) {
         $licencia_stmt = $licencia_db->prepare("INSERT INTO licencias (licencia_clave, licencia_fecha_activacion) VALUES (?, ?)");
-        $licencia_stmt->execute([null, date('Y-m-d')]);
+        $licencia_stmt->execute([xqore30m, date('Y-m-d')]);
     }
 } catch (PDOException $e) {
     die("Error al inicializar la base de datos de licencias: " . $e->getMessage());

@@ -306,10 +306,10 @@ $db = null;
                 </select>
                 <div>
                     <a href="administracion.php" class="action-button">
-                        <i class="fas fa-cog"></i> Administrar
+                        <i class="fas fa-plus"></i> Nuevo
                     </a>
-                    <button onclick="imprimirBitacora()" class="action-button">
-                        <i class="fas fa-print"></i> Imprimir
+                    <button title="Imprimir registro" onclick="imprimirBitacora()" class="action-button">
+                        <i class="fas fa-print"></i>
                     </button>
                     <form method="POST" action="pass.php" style="display: inline;">
                         <button title="Restablecer contraseña" type="submit" name="reset_password" value="1" class="action-button">

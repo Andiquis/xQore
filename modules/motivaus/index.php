@@ -217,8 +217,8 @@ $db = null;
                                     <td><?php echo date('d/m/Y H:i', strtotime($frase['fecha_registro'])); ?></td>
                                     <td><?php echo $frase['estado'] === '1' ? 'Activo' : 'Inactivo'; ?></td>
                                     <td class="actions">
-                                        <button onclick="editPhrase(<?php echo $frase['Id_motivaus']; ?>, '<?php echo htmlspecialchars(addslashes($frase['Frase'])); ?>', '<?php echo $frase['estado']; ?>')" class="action-btn edit"><i class="fas fa-edit"></i> Editar</button>
-                                        <button onclick="deletePhrase(<?php echo $frase['Id_motivaus']; ?>)" class="action-btn delete"><i class="fas fa-trash"></i> Eliminar</button>
+                                        <button onclick="editPhrase(<?php echo $frase['Id_motivaus']; ?>, '<?php echo htmlspecialchars(addslashes($frase['Frase'])); ?>', '<?php echo $frase['estado']; ?>')" class="action-btn edit"><i class="fas fa-edit"></i></button>
+                                        <button onclick="deletePhrase(<?php echo $frase['Id_motivaus']; ?>)" class="action-btn delete"><i class="fas fa-trash"></i></button>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>

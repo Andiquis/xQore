@@ -45,8 +45,8 @@ try {
 
 
 
-
 /*
+
 // test_licencia_mensual_activa.php - Simula una licencia mensual activa
 try {
     $licencia_db = new PDO('sqlite:C:\xampp\htdocs\xqoredesk1\app\xqore_licencias.db');
@@ -57,15 +57,14 @@ try {
 
     // Insertar licencia mensual con fecha actual
     $licencia_stmt = $licencia_db->prepare("INSERT INTO licencias (licencia_clave, licencia_fecha_activacion) VALUES (?, ?)");
-    $licencia_stmt->execute(['xqore30', date('Y-m-d')]);
+    $licencia_stmt->execute(['xqore30m', date('Y-m-d')]);
 
-    echo "Licencia mensual activa creada (clave: xqore30, fecha: " . date('Y-m-d') . ").<br>";
+    echo "Licencia mensual activa creada (clave: xqore30m, fecha: " . date('Y-m-d') . ").<br>";
     echo "Visita <a href='index.php'>index.php</a> para verificar (no debería mostrar popup).";
 } catch (PDOException $e) {
     echo "Error: " . $e->getMessage();
-}*/
-
-
+}
+*/
 
 /*
 // test_licencia_mensual_expirada.php - Simula una licencia mensual expirada
@@ -159,7 +158,7 @@ try {
 
 
 
-
+/*
 // limpiar_licencias.php - Elimina todas las licencias y reinicia con una gratuita
 try {
     $licencia_db = new PDO('sqlite:C:\xampp\htdocs\xqoredesk1\app\xqore_licencias.db');
@@ -176,5 +175,5 @@ try {
     echo "Visita <a href='index.php'>index.php</a> para verificar (no debería mostrar popup).";
 } catch (PDOException $e) {
     echo "Error: " . $e->getMessage();
-}
+}*/
 ?>

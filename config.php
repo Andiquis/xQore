@@ -1,14 +1,21 @@
 <?php
-// config.php - Configuración de la base de datos SQLite
-define('DB_FILE', __DIR__ . '/database/xqore.db');
+
+// Obtener la ruta persistente desde una variable de entorno
+$dbPath = getenv("XQORE_DB_PATH");
+
+if (!$dbPath) {
+    // Por compatibilidad en desarrollo, usar ruta por defecto
+    $dbPath = __DIR__ . '/database/xqore.db';
+}
+
+define('DB_FILE', $dbPath);
 
 // Función para conectar a la base de datos
 function getDbConnection() {
     try {
         $db = new PDO('sqlite:' . DB_FILE);
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        // Configurar tiempo de espera para evitar bloqueos prolongados
-        $db->exec("PRAGMA busy_timeout = 5000"); // 5 segundos de espera
+        $db->exec("PRAGMA busy_timeout = 5000");
         return $db;
     } catch (PDOException $e) {
         die("Error de conexión: " . $e->getMessage());

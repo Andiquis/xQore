@@ -1,5 +1,17 @@
 <?php
 // index.php - Página principal
+// Configurar encabezados CORS para permitir acceso desde cualquier IP
+header("Access-Control-Allow-Origin: *"); // Permite solicitudes desde cualquier origen
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type");
+
+// Manejar solicitudes OPTIONS (preflight)
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit;
+}
+
+
 require_once 'config.php'; // Incluir la configuración de la base de datos
 require_once 'sistema_licencias.php'; // Incluir el sistema de licencias
 
@@ -186,7 +198,7 @@ try {
                     <p>Gestiona tus listas de acciones y tareas pendientes</p>
                 </a>
                 
-                <a href="modules/bitacore/index.php" class="module-card">
+                <a href="modules/bitacore/pass.php" class="module-card">
                     <div class="module-icon"><i class="fas fa-book"></i></div>
                     <h3>Bitacore</h3>
                     <p>Registra tus pensamientos y experiencias en formato diario</p>
@@ -205,8 +217,18 @@ try {
             </div-->
         </main>
     </div>
-    
+    <footer style="text-align:center; font-size: 0.75rem; color: #00ff00; padding: 10px 0; border-top: 1px solid #0f0;">
+        © 2025 XQ0R3 Systems - Todos los derechos reservados.<br>
+        <a href="https://chat.whatsapp.com/BaPnXJ4xAaJIpRkqaZ86gB?mode=ac_t" target="_blank" 
+        style="display: inline-block; margin-top: 5px; background-color: #00ff00; color: #000; padding: 4px 10px; border-radius: 4px; text-decoration: none; font-weight: bold;">
+            <i class="fab fa-whatsapp"></i> Soporte
+        </a>
+    </footer>
+
+
     <!-- Usar script externo en lugar de script en línea -->
     <script src="js/scripts.js"></script>
+
+    
 </body>
 </html>
